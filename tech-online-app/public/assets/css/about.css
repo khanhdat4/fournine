@@ -1,0 +1,147 @@
+.about {
+  position: relative;
+}
+
+.about-img {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  width: 50%;
+}
+
+.about-heading {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.about-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-title {
+  font-size: 3.375rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.about-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    display: none;
+  }
+
+  .about-heading {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* statistical */
+
+.statistical {
+  margin-bottom: 140px;
+}
+
+.statistical-item {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s all;
+  border-radius: 4px;
+}
+
+.statistical-icon {
+  margin-bottom: 24px;
+  transition: 0.5s all;
+}
+
+.statistical-icon::after {
+  transition: 0.5s all;
+}
+
+.statistical-icon i {
+  transition: 0.5s all;
+}
+
+.statistical-desc {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4;
+  transition: 0.5s all;
+}
+
+.statistical-title {
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.5s all;
+  text-align: center;
+}
+
+.statistical-item:hover {
+  background: #db4444;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+.statistical-item:hover .statistical-icon {
+  background: #ffffffbc;
+}
+
+.statistical-item:hover .statistical-icon::after {
+  background: #fff;
+}
+
+.statistical-item:hover .statistical-icon i {
+  color: #000;
+}
+
+.statistical-item:hover .statistical-desc,
+.statistical-item:hover .statistical-title {
+  color: #fff;
+}
+
+/* service */
+.service {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 88px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title {
+  margin: 24px 0 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.service-desc {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .service {
+    gap: 20px;
+  }
+}
